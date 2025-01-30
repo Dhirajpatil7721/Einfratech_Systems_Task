@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&family=Updock&display=swap" rel="stylesheet">
+    <title>Password Genrator</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="text">
+            <h1 id="h1">Password Genrator</h1>
+            <p class="para">"Secure. Strong. Random. One tap to ultimate security! Lock your accounts with strong
+                passwords and stay
+                protected. Powerful passwords, effortless security—don’t guess, generate! Your safety starts with a
+                click—create unbreakable passwords and keep hackers away!" 🔐🚀</p>
+        </div>
+
+        <div class="second">
+            <input id="genrateinp" type="text">
+            <img id="copy" src="/img/copy.png" onclick="copytxt()" alt="copy">
+            <button id="genrate">Genrate</button>
+        </div>
+
+        <div class="reqir">
+
+            <div class="one">
+                <div class="len8">
+
+                    <label for="">Length 8</label>
+                    <input type="checkbox" id="len8" value="8">
+                </div>
+
+                <div class="len10">
+                    <label for="">Length 10</label>
+                    <input type="checkbox" id="len10" value="10">
+                </div>
+            </div>
+
+            <div class="two">
+                <div class="upper">
+                    <label for="">Upper Case</label>
+                    <input type="checkbox" id="upper">
+                </div>
+
+                <div class="lower">
+                    <label for="">Lower Case</label>
+                    <input type="checkbox" id="lower">
+                </div>
+            </div>
+
+            <div class="three">
+                <div class="char">
+                    <label for="">Special Characters</label>
+                    <input type="checkbox" id="char">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="/index.js"></script>
+</body>
+
+</html>
