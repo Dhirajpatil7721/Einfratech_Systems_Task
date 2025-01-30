@@ -1,0 +1,269 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: url('/Sirius\ Tamed.jpg');
+}
+
+.main {
+    width: 32%;
+    height: 80vh;
+    background-color: rgb(70, 70, 70);
+    margin-top: 3%;
+    border-radius: 10px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    -webkit-box-shadow: 10px 10px 5px 10px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 10px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 10px rgba(0, 0, 0, 0.75);
+}
+
+.top {
+    background-color: rgba(231, 228, 228, 0.918);
+    width: 90%;
+    height: 17vh;
+    margin-top: 4%;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.btns {
+    margin: 1%;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* button */
+.btn3 {
+    width: 30%;
+    height: 5vh;
+    display: none;
+}
+
+#clearall {
+    width: 90%;
+    height: 5vh;
+    display: none;
+}
+
+/* new */
+.fboth {
+    width: 30%;
+    height: 5vh;
+}
+
+.fstart {
+    width: 100%;
+    height: 5vh;
+}
+
+/* button */
+.laps {
+    width: 90%;
+    background-color: aliceblue;
+    height: 50vh;
+    margin-top: 1%;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: gray lightgray;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.laps::-webkit-scrollbar {
+    width: 8px;
+}
+
+.laps::-webkit-scrollbar-track {
+    background: lightgray;
+    border-radius: 10px;
+}
+
+.laps::-webkit-scrollbar-thumb {
+    background: gray;
+    border-radius: 10px;
+}
+
+.laps::-webkit-scrollbar-thumb:hover {
+    background: darkgray;
+}
+
+
+.li {
+    height: 5vh;
+    text-align: center;
+    list-style: none;
+    border: 1px solid gray;
+    width: 285%;
+    margin-bottom: 8px;
+    /* margin-right: 10%; */
+    padding-top: 12px;
+}
+
+#time {
+    font-size: 20px;
+}
+
+@font-face {
+    font-family: 'MyFont';
+    src: url('/digital-7.regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.num {
+    font-size: 80px;
+    font-family: MyFont;
+}
+
+/* small devi */
+@media screen and (max-width: 768px) {
+    .main {
+        width: 90%;
+        min-height: 75vh;
+    }
+
+    .top {
+        height: 15vh;
+    }
+
+    .btns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    button {
+        width: 90%;
+        margin-bottom: 10px;
+    }
+
+    .num {
+        font-size: 60px;
+    }
+
+    .laps {
+        height: 35vh;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .num {
+        font-size: 50px;
+    }
+
+    .top {
+        height: 12vh;
+    }
+
+    .laps {
+        height: 30vh;
+    }
+}
+
+
+
+@media screen and (min-width: 319px) and (max-width: 425px) {
+    .main {
+        width: 75%;
+        height: 75vh;
+        margin-top: 10%;
+    }
+
+    .top {
+        height: 12vh;
+    }
+
+    .num {
+        font-size: 40px;
+    }
+
+    .btns {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    button {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+    .laps {
+        height: 46vh;
+        overflow-y: auto;
+    
+    }
+
+    .li {
+        width: 160%;
+        font-size: 14px;
+        padding: 8px;
+        height: 3vh;
+        
+    }
+}
+
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+    .main {
+        width: 50%;
+        height: 75vh;
+        margin-top: 10%;
+    }
+
+    .top {
+        height: 15vh;
+    }
+
+    .num {
+        font-size: 65px;
+    }
+
+    .btns {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    button {
+        width: 90%;
+        margin-bottom: 10px;
+    }
+
+    .laps {
+        height: 40vh;
+    }
+
+    .li {
+        width: 173%;
+        font-size: 16px;
+        padding: 12px;
+        height: 4vh;
+    }
+}
+
+
+@media screen and (min-width: 1440px) {
+    .main {
+        width: 30%;
+        margin-top:6%;
+        height: 70vh;
+    }
+}
+/* @media screen and (min-width: 1024px) {
+    .main {
+        width: 39%;
+    }
+} */
