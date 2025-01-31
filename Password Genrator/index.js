@@ -21,8 +21,9 @@ VANTA.BIRDS({
 });
 
 genrate.addEventListener('click', () => {
-    let len = 8;
+ let len = 0;
 
+    if (len8.checked) len = 8;
     if (len10.checked) len = 12;
 
     let charat = '';
