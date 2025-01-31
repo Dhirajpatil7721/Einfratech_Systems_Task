@@ -8,26 +8,24 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    margin-top: 12%;
+    min-height: 100vh; /* Ensure body takes full viewport height */
     background-color: #8EC5FC;
     background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
-    min-height: 100vh;
     padding: 20px;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .main {
-    padding: 20px;
-    background-color: #A9C9FF;
-    background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
-    border-radius: 16px;
-    border: 1px solid gray;
-    height: auto;
     width: 90%;
     max-width: 600px;
-    box-shadow: 21px 24px 24px -4px rgba(0, 0, 0, 0.75);
-    margin: 20px;
+    padding: 20px;
+    color: white;
+    background: rgba(255, 255, 255, 0.18);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.6px);
+    -webkit-backdrop-filter: blur(7.6px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 #h1:hover {
@@ -41,7 +39,6 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    flex-wrap: wrap;
 }
 
 .para {
@@ -72,6 +69,7 @@ body {
     letter-spacing: 20px;
     padding-left: 50px;
     margin-bottom: 10px;
+    color: white;
 }
 
 #genrateinp:focus {
@@ -120,10 +118,6 @@ body {
 
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
-    body {
-        margin-top: 5%;
-    }
-
     .main {
         width: 95%;
         padding: 10px;
@@ -152,10 +146,6 @@ body {
 }
 
 @media (max-width: 480px) {
-    body {
-        margin-top: 2%;
-    }
-
     .main {
         width: 100%;
         border-radius: 0;
