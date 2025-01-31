@@ -8,10 +8,22 @@ let lower = document.getElementById("lower")
 let char = document.getElementById("char")
 
 
+const bird = document.getElementById("bird");
+VANTA.BIRDS({
+    el: "#bird",
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: 200.00,
+    minWidth: 200.00,
+    scale: 1.00,
+    scaleMobile: 3.00
+});
+
 genrate.addEventListener('click', () => {
     let len = 8;
 
-    if (len10.checked) len = 10;
+    if (len10.checked) len = 12;
 
     let charat = '';
 
