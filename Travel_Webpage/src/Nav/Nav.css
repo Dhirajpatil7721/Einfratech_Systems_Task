@@ -1,0 +1,30 @@
+#nav{
+background: rgba(255, 255, 255, 0.06);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(2.3px);
+-webkit-backdrop-filter: blur(2.3px);
+border: 1px solid rgba(255, 255, 255, 0.66);
+}
+
+
+
+#a {
+    color: black;
+    font-size: 1.2em; 
+    transition: color 0.3s ease-in-out, font-size 0.3s ease-in-out; 
+}
+
+#a:hover {
+    color: yellow; 
+    font-size: 1.3em; 
+    text-decoration: overline;
+}
+.leKickOutFront span { animation-name: leKickOutBehind; transform-origin: top }
+@keyframes leKickOutBehind {
+    40% { transform: rotate(-45deg) }
+    100% {
+        transform: rotate(0deg);
+        animation-timing-function: cubic-bezier(0,.9,.7,1.45)
+    }
+}
