@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <title>Food</title>
+</head>
+
+<body class="bg-gray-100">
+    <nav id="nav"class="shadow-md p-4 fixed w-full top-0 z-50">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <a href="#" class="flex items-center">
+                <img src="/img/logo.png" alt="Logo" class="w-12 h-12">
+                <span class="text-xl font-bold ml-2">Foodie</span>
+            </a>
+
+            <button id="menu-btn" class="md:hidden text-2xl">
+                ☰
+            </button>
+
+            <ul id="menu" class="hidden md:flex flex-col md:flex-row gap-6 text-lg font-semibold">
+                <li class="hover:text-blue-500 cursor-pointer"><a class="text-white" href="#Home">Home</a></li>
+                <li class="hover:text-blue-500 cursor-pointer"><a class="text-white" href="#About">About Us</a></li>
+                <li class="hover:text-blue-500 cursor-pointer"><a class="text-white" href="#Service">Services</a></li>
+                <li class="hover:text-blue-500 cursor-pointer"><a class="text-white" href="#Cotact">Contact Us</a></li>
+                <li>
+                    <a href="/Sign.html" class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">
+                        Sign Up
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="Home" class="pt-20">
+        <div id="home" class="h-[645px] sm:h-[500px] md:h-[600px] lg:h-[645px] xl:h-[700px] flex flex-col items-center justify-center 
+                    text-center px-6">
+            <h1 id="htxt" class="text-[90px] text-4xl sm:text-5xl md:text-6xl font-bold text-white px-6 py-2 rounded-lg">
+                Welcome to Food World
+            </h1>
+            <!-- <p id="htxt"
+                class="text-lg sm:text-xl md:text-2xl font-medium text-white px-6 py-4 rounded-lg mt-4 max-w-2xl">
+                Welcome to the Berry Fresh Cafe's web page. We serve all organic and GMO-free ingredients,
+                committed to delivering the freshest food to our customers. Enjoy our fresh Smoothies, Sandwiches,
+                Paninis, and Acai bowls.
+            </p> -->
+        </div>
+    </section>
+
+
+
+
+    <section id="About" class=" bg-gray-100">
+        <div id="about" class="h-auto flex flex-col items-center justify-center text-center px-6 py-10">
+
+            <h1 id="atxt" class="text-4xl font-bold text-white px-4 py-2">OUR SPECIALTY</h1>
+
+            <p id="atxt" class="text-lg text-white px-6 py-2 mt-4 max-w-2xl">
+                We pride ourselves on crafting authentic, flavor-packed dishes that celebrate the freshest seasonal
+                ingredients,
+                expertly blended with traditional techniques and a modern twist.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-10">
+
+                <div id="acard1"
+                    class="shadow-lg rounded-lg p-6 flex flex-col items-center hover:scale-105 transition transform duration-300">
+                    <img src="/img/veg.jpg" alt="Veg" class="w-24 h-24 rounded-full">
+                    <label class="text-lg font-bold text-gray-800 mt-4">Veg</label>
+                    <p>Vegetarian food includes fresh vegetables, fruits, grains, nuts, and plant-based proteins for a
+                        healthy, sustainable, and delicious diet.</p>
+                </div>
+
+                <div id="acard1"
+                    class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center hover:scale-105 transition transform duration-300">
+                    <img src="/img/nonveg.jpg" alt="Non-Veg" class="w-24 h-24 rounded-full">
+                    <label class="text-lg font-bold text-gray-800 mt-4">Non-Veg</label>
+                    <p>Nonveg dishes are rich in protein, flavorful, and often include meat, fish, or poultry.</p>
+                </div>
+
+                <div id="acard1"
+                    class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center hover:scale-105 transition transform duration-300">
+                    <img src="/img/fastfood.jpg" alt="Fast Food" class="w-24 h-24 rounded-full">
+                    <label class="text-lg font-bold text-gray-800 mt-4">Fast Food</label>
+                    <p>Fast food is quick, tasty, and convenient for busy lifestyles.!</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="Service" class=" bg-gray-100">
+        <div id="service" class="h-auto flex flex-col items-center text-center ">
+            <h1 id="stxt" class="text-4xl font-bold text-gray-800 py-4">How It Works?</h1>
+
+            <div id="info" class="bg-white grid grid-cols-1 md:grid-cols-3 mt-10 w-[80%] mx-auto">
+
+                <div id="card1"
+                    class="bg-white p-6 flex flex-col items-center hover:scale-105 transition transform duration-300">
+                    <img src="/img/login.gif" alt="Sign In" class="w-24 h-24">
+                    <label class="text-lg font-bold text-gray-800 mt-4">Sign In & Choose From Our Weekly Menu</label>
+                </div>
+
+                <div id="card2"
+                    class="p-6 flex flex-col items-center hover:scale-105 transition transform duration-300 ">
+                    <img src="/img/delivery.gif" alt="Delivery" class="w-24 h-24">
+                    <label class="text-lg font-bold text-gray-800 mt-4">
+                        We Will Deliver Your Purchase
+                        <span class="text-blue-500">SUBSCRIBE NOW</span>
+                        & Enjoy!
+                    </label>
+                </div>
+
+                <div id="card3"
+                    class="bg-white p-6 flex flex-col items-center hover:scale-105 transition transform duration-300">
+                    <img src="/img/enjoyfood.gif" alt="Enjoy" class="w-24 h-24">
+                    <label class="text-lg font-bold text-gray-800 mt-4">Enjoy Our Tasty Organic Food!</label>
+                </div>
+
+            </div>
+
+            <div id="offer" class="mt-10">
+                <img src="/img/srvice.png" alt="" class="w-full max-w-4xl rounded-lg shadow-md">
+            </div>
+        </div>
+    </section>
+
+    <section id="Contact" class="bg-gray-900 text-white py-8">
+        <footer class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+
+                <div>
+                    <h2 class="text-xl font-semibold mb-4">Quick Links</h2>
+                    <ul class="space-y-2">
+                        <li><a href="#Home" class="hover:text-gray-400">Home</a></li>
+                        <li><a href="#About" class="hover:text-gray-400">About</a></li>
+                        <li><a href="#Services" class="hover:text-gray-400">Services</a></li>
+                        <li><a href="#Contact" class="hover:text-gray-400">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2 class="text-xl font-semibold">Contact Us</h2>
+                    <p>📞 <a href="tel:+919876543210" class="hover:text-gray-400">+91 98765 43210</a></p>
+                    <p>📧 <a href="mailto:info@example.com" class="hover:text-gray-400">info@example.com</a></p>
+                </div>
+
+                <div>
+                    <h2 class="text-xl font-semibold mb-4">Follow Us</h2>
+                    <div class="flex justify-center md:justify-start space-x-4">
+                        <a href="#" class="text-2xl hover:text-gray-400"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-2xl hover:text-gray-400"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-2xl hover:text-gray-400"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-2xl hover:text-gray-400"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center text-gray-400 text-sm mt-6">
+                © 2025 Foodies. All Rights Reserved.
+            </div>
+        </footer>
+    </section>
+
+
+
+    <script src="/index.js"></script>
+
+</body>
+
+</html>
