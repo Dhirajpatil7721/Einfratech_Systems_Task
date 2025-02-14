@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+#nav {
+    background-color: rgba(8, 8, 8, 0.712);
+}
+
+#htxt {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    /* font-size: 90px; */
+    font-style: normal;
+    /* color: black; */
+    color: white;
+    /* background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1.7px);
+    -webkit-backdrop-filter: blur(1.7px); */
+}
+
+#home {
+    background-image: url(/img/home.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(36, 35, 35, 0.7), rgba(46, 45, 45, 0.664));
+    z-index: 1;
+    opacity: 0.6;
+}
+
+#about {
+    background-image: url(/img/about.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+#atxt {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 500;
+    font-style: normal;
+    color: black;
+}
+
+#acard1 {
+    background-color: #85ffbe93;
+    background-image: linear-gradient(45deg, #85ffbeb7 0%, #fffb7da9 100%);
+
+}
+
+#service {
+    background-image: url(/img/service\ bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#stxt {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+}
+#card1{
+    background-color: #f5bd9d65;
+background-image: linear-gradient(62deg, #f0b99963 0%, #f3db9fb2 100%);
+
+}
+#card2 {
+    border-left: 2px solid black;
+    background-color: #f5bd9d65;
+background-image: linear-gradient(62deg, #f0b99963 0%, #f3db9fb2 100%);
+    
+}
+
+#card3 {
+    border-left: 2px solid black;
+    background-color: #f5bd9d65;
+    background-image: linear-gradient(62deg, #f0b99963 0%, #f3db9fb2 100%);
+    
+}
